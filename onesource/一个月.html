@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>一个月快乐</title>
+
+<style>
+
+li{
+	color: red;
+	list-style: none;
+}
+
+</style>
+
+</head>
+<body>
+<h1 style="color:red">超级喜欢你的<h1>
+<ul id="oul">
+</ul>
+	<script>
+	var ul = document.getElementById('oul');
+	var i = 0;
+	var li = null;
+	var text = ['小梦雪鸭','你在干嘛呀','你知道吗','我好想你的','就像天上的云','不知所归','有时候也会觉得','假如 自己早就不见了','那又会怎样呢','不过还好啦','我们都在','以后也会一直好好哒!','才不是卖萌!','这叫可爱!','你懂个锤子','好啦','最喜欢你了','一个月快乐!']
+	var a=setInterval(function(){
+		if(i<text.length){
+			li = document.createElement('li');
+			li.innerText = text[i];
+			ul.appendChild(li);
+			i++;
+		}else{
+			clearInterval(a);
+		}
+		
+	},1000)
+	
+	</script>
+</body>
+
+</html>
